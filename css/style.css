@@ -1,0 +1,132 @@
+/* variables */
+:root {
+  --pink-pure:  #FF6B9D;
+  --pink-soft:  #F4A0A0;
+  --pink-light: #FFF0F5;
+  --beige:      #FFF5F0;
+  --beige-mid:  #E8C4B8;
+  --caramel:    #C9956C;
+  --brown:      #A0522D;
+  --brown-deep: #2D1B14;
+  --white:      #FFFFFF;
+
+  --serif: 'Playfair Display', serif;
+  --sans:  'DM Sans', sans-serif;
+}
+
+/* reset */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--sans);
+  background: var(--beige);
+  color: var(--brown-deep);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul { list-style: none; }
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* navbar */
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 1.2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 245, 240, 0.95);
+  border-bottom: 1px solid var(--beige-mid);
+}
+
+.navbar__logo {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--brown-deep);
+}
+
+.navbar__menu {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.navbar__menu a {
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brown);
+  transition: color 0.2s;
+}
+
+.navbar__menu a:hover,
+.navbar__menu-active {
+  color: var(--pink-pure) !important;
+}
+
+/* boutons */
+.btn {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: 50px;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: none;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn--primary {
+  background: var(--pink-pure);
+  color: var(--white);
+}
+
+.btn--primary:hover {
+  background: var(--brown);
+  transform: translateY(-2px);
+}
+
+.btn--outline {
+  border: 1.5px solid var(--brown-deep);
+  color: var(--brown-deep);
+  background: transparent;
+}
+
+.btn--outline:hover {
+  background: var(--brown-deep);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+/* footer */
+.footer {
+  background: var(--brown-deep);
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .navbar { padding: 1rem 1.5rem; }
+  .navbar__menu { display: none; }
+}

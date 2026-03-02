@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Britney WANKPO-SONON, développeuse fullstack et future Product Manager.">
+  <meta property="og:title" content="Britney WANKPO-SONON | Portfolio">
+  <meta property="og:description" content="Portfolio de Britney WANKPO-SONON, développeuse fullstack et future Product Manager.">
+  <meta property="og:image" content="assets/img/My_pic.jpg">
+  <title>Britney WANKPO-SONON | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages/home.css">
+</head>
+
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <header class="navbar">
+    <a href="index.html" class="navbar__logo">Accueil</a>
+    <ul class="navbar__menu">
+      <li><a href="about.html">A propos</a></li>
+      <li><a href="skills.html">Compétences</a></li>
+      <li><a href="projects.html">Projets</a></li>
+      <li><a href="extra.html">Extrascolaire</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <section class="hero">
+
+    <div class="hero__content">
+      <h1 class="hero__title">
+        <span class="hero__title-solid">Britney</span>
+        <span class="hero__title-outline">Wankpo-Sonon</span>
+      </h1>
+      <p class="hero__subtitle">
+        Passionnée par le web et le design, future développeuse fullstack et Product Manager.
+      </p>
+      <p class="hero__typing">
+        <span id="typing-text"></span><span class="cursor-blink"></span>
+      </p>
+      <div class="hero__buttons">
+        <a href="contact.html" class="btn btn--primary">Me contacter</a>
+        <a href="assets/cv.pdf" download class="btn btn--outline">Télécharger mon CV</a>
+      </div>
+    </div>
+
+    <div class="hero__photo">
+      <img src="assets/img/My_pic.jpg" alt="Britney WANKPO-SONON">
+    </div>
+  </section>
+
+  <section class="section-cards">
+    <div class="section-cards__header">
+      <p class="section-cards__label">Explorer mon univers</p>
+      <h2 class="section-cards__title">Mes pages</h2>
+    </div>
+
+    <div class="cards-grid">
+
+      <a href="about.html" class="card card--about reveal">
+        <div class="card__bg"></div>
+        <div class="card__arrow">+</div>
+        <div class="card__content">
+          <h3 class="card__title">A propos</h3>
+          <p class="card__sub">Mon parcours et ma personnalité</p>
+        </div>
+      </a>
+
+      <a href="skills.html" class="card card--skills reveal">
+        <div class="card__bg"></div>
+        <div class="card__arrow">+</div>
+        <div class="card__content">
+          <p class="card__number">02</p>
+          <h3 class="card__title">Compétences</h3>
+          <p class="card__sub">Tech, outils et soft skills</p>
+        </div>
+      </a>
+
+      <a href="projects.html" class="card card--projects card--large reveal">
+        <div class="card__bg"></div>
+        <div class="card__arrow">+</div>
+        <div class="card__content">
+          <h3 class="card__title">Projets réalisés</h3>
+          <p class="card__sub">SkillSwap · E-Todo · Hack and Juice</p>
+        </div>
+      </a>
+
+      <a href="extra.html" class="card card--extra reveal">
+        <div class="card__bg"></div>
+        <div class="card__arrow">+</div>
+        <div class="card__content">
+          <h3 class="card__title">Extra-scolaire</h3>
+          <p class="card__sub">Asso, Hub, Evènements</p>
+        </div>
+      </a>
+
+      <a href="contact.html" class="card card--contact reveal">
+        <div class="card__bg"></div>
+        <div class="card__arrow">+</div>
+        <div class="card__content">
+          <h3 class="card__title">Contact</h3>
+          <p class="card__sub">Travaillons ensemble</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>2026 Britney WANKPO-SONON</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
