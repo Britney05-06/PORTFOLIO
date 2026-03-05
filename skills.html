@@ -3,67 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Compétences de Britney WANKPO-SONON, développement, outils et soft skills.">
+  <meta name="description" content="Compétences de Britney WANKPO-SONON, UX/UI design, développement et soft skills.">
   <title>Compétences | Britney WANKPO-SONON</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/pages/skills.css">
 </head>
-
 <body>
-
   <div class="cursor" id="cursor"></div>
   <div class="cursor-follower" id="cursorFollower"></div>
 
   <header class="navbar">
     <a href="index.html" class="navbar__logo">Accueil</a>
     <ul class="navbar__menu">
-      <li><a href="about.html">A propos</a></li>
+      <li><a href="about.html">À propos</a></li>
       <li><a href="skills.html" class="navbar__menu-active">Compétences</a></li>
       <li><a href="projects.html">Projets</a></li>
-      <li><a href="extra.html">Extrascolaire</a></li>
+      <li><a href="extra.html">Extra-scolaire</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+    <div class="navbar__actions">
+      <button id="dark-toggle" class="dark-toggle" aria-label="Mode sombre">🌙</button>
+      <button class="navbar__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
   <section class="page-header">
     <div class="page-header__deco"></div>
-    <p class="page-header__number">02</p>
     <h1 class="page-header__title">Compétences</h1>
-    <p class="page-header__sub">Tech, outils et soft skills</p>
+    <p class="page-header__sub">Design, tech et méthodes — ce que je maîtrise et ce que j'apprends.</p>
   </section>
 
   <section class="skills-section">
 
-    <div class="skills-group reveal">
-      <h2>Développement</h2>
+    <div class="skills-group skills-group--featured skills-group--ux">
+      <h2 class="skills-group__title">Design & UX/UI</h2>
       <div class="skills-tags">
-        <span class="tag tag--pink">HTML</span>
-        <span class="tag tag--pink">CSS / SCSS</span>
-        <span class="tag tag--pink">JavaScript</span>
+        <span class="tag tag--pink">Figma</span>
+        <span class="tag tag--pink">Wireframes</span>
+        <span class="tag tag--pink">Prototypes interactifs</span>
+        <span class="tag tag--pink">Interviews utilisateurs</span>
+        <span class="tag tag--pink">Tests utilisateurs</span>
+        <span class="tag tag--pink">Maquettes Figma</span>
+      </div>
+    </div>
+
+    <div class="skills-group skills-group--dev">
+      <h2 class="skills-group__title">Développement</h2>
+      <div class="skills-tags">
+        <span class="tag tag--brown">HTML</span>
+        <span class="tag tag--brown">CSS / SCSS</span>
+        <span class="tag tag--brown">JavaScript</span>
         <span class="tag tag--brown">PHP</span>
         <span class="tag tag--brown">SQL</span>
         <span class="tag tag--brown">Python</span>
       </div>
     </div>
 
-    <div class="skills-group reveal">
-      <h2>Outils</h2>
+    <div class="skills-group skills-group--tools">
+      <h2 class="skills-group__title">Outils</h2>
       <div class="skills-tags">
         <span class="tag tag--caramel">Git</span>
         <span class="tag tag--caramel">GitHub</span>
-        <span class="tag tag--caramel">Figma</span>
         <span class="tag tag--caramel">VS Code</span>
         <span class="tag tag--caramel">Docker</span>
       </div>
     </div>
 
-    <div class="skills-group reveal">
-      <h2>Soft skills</h2>
+    <div class="skills-group skills-group--soft">
+      <h2 class="skills-group__title">Soft skills</h2>
       <div class="skills-tags">
         <span class="tag tag--soft">Communication</span>
         <span class="tag tag--soft">Travail en équipe</span>
@@ -75,7 +87,7 @@
   </section>
 
   <footer class="footer">
-    <p>2026 Britney WANKPO-SONON</p>
+    <p>© 2026 Britney Wankpo-Sonon</p>
   </footer>
 
   <script src="js/main.js"></script>

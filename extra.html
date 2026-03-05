@@ -3,56 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Experiences extra-scolaires de Britney WANKPO-SONON.">
-  <title>Extra-scolaire | Britney WANKPO-SONON</title>
-
+  <title>Extra-scolaire — Britney WANKPO-SONON</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/pages/extra.css">
 </head>
-
 <body>
-
   <div class="cursor" id="cursor"></div>
   <div class="cursor-follower" id="cursorFollower"></div>
 
   <header class="navbar">
     <a href="index.html" class="navbar__logo">Accueil</a>
     <ul class="navbar__menu">
-      <li><a href="about.html">A propos</a></li>
+      <li><a href="about.html">À propos</a></li>
       <li><a href="skills.html">Compétences</a></li>
       <li><a href="projects.html">Projets</a></li>
-      <li><a href="extra.html">Extrascolaire</a></li>
+      <li><a href="extra.html" class="navbar__menu-active">Extra-scolaire</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+    <div class="navbar__actions">
+      <button id="dark-toggle" class="dark-toggle" aria-label="Mode sombre">🌙</button>
+      <button class="navbar__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
   <section class="page-header">
     <div class="page-header__deco"></div>
-    <p class="page-header__number">05</p>
-    <h1 class="page-header__title">Extra-scolaire</h1>
-    <p class="page-header__sub">Associations, Hub, évenements et engagements</p>
+    <h1 class="page-header__title">Au-delà du code</h1>
+    <p class="page-header__sub">Associations, passions et engagements qui me définissent.</p>
   </section>
 
-  <section class="extra-section">
+  <!-- intro 2 colonnes -->
+  <section class="extra-intro">
+    <div class="extra-intro__left">
+      <p class="extra-intro__label">Plusieurs casquettes</p>
+      <h2 class="extra-intro__title">Je ne me résume pas à une seule chose</h2>
+    </div>
+    <p class="extra-intro__text">
+      Développeuse, designer, cuisinière, crocheteuse, communicante en devenir…
+      J'aime avoir plusieurs casquettes et crois que la curiosité dans tous les domaines
+      nourrit aussi bien la créativité que la rigueur. Ce que je fais en dehors du code
+      dit autant sur moi que ce que je fais devant un écran.
+    </p>
+  </section>
 
-    <div class="extra-card reveal">
-      <div class="extra-card__body">
-        <h2>Je complète après</h2>
-        <span class="extra-card__date">Période</span>
-        <p>Je complète après</p>
+  <!-- cuisine -->
+  <section class="extra-block">
+    <div class="extra-block__content">
+      <p class="extra-block__label">Passion</p>
+      <h2 class="extra-block__title">La cuisine</h2>
+      <p class="extra-block__text">
+        Cuisiner, c'est ma façon de décompresser et de créer avec les mains.
+        J'aime expérimenter des recettes, mélanger les influences et prendre soin
+        des gens autour de moi à travers ce que je prépare.
+      </p>
+    </div>
+    <div class="extra-block__images extra-block__images--duo">
+      <div class="extra-block__img-wrap extra-block__img-wrap--tall">
+        <img src="assets/img/food1.jpg" alt="Cuisine 1">
+      </div>
+      <div class="extra-block__img-wrap extra-block__img-wrap--short">
+        <img src="assets/img/food2.jpg" alt="Cuisine 2">
       </div>
     </div>
+  </section>
 
+  <!-- crochet -->
+  <section class="extra-block extra-block--reverse">
+    <div class="extra-block__content">
+      <p class="extra-block__label">Passion & association</p>
+      <h2 class="extra-block__title">Le crochet &<br>Arts and Crafts</h2>
+      <p class="extra-block__text">
+        Le crochet, c'est ma méditation. Créer quelque chose de tangible point par point,
+        c'est un équilibre parfait à la vie numérique. Je fais aussi partie de l'association
+        <strong>Arts and Crafts d'Epitech Lyon</strong>, où on partage cette passion
+        avec d'autres étudiants autour d'ateliers créatifs.
+      </p>
+    </div>
+    <div class="extra-block__images extra-block__images--trio">
+      <div class="extra-block__img-wrap extra-block__img-wrap--main">
+        <img src="assets/img/crochet1.png" alt="Crochet 1">
+      </div>
+      <div class="extra-block__img-wrap--stack">
+        <div class="extra-block__img-wrap">
+          <img src="assets/img/crochet2.jpg" alt="Crochet 2">
+        </div>
+        <div class="extra-block__img-wrap">
+          <img src="assets/img/crochet3.png" alt="Crochet 3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAKER -->
+  <section class="extra-block">
+    <div class="extra-block__content">
+      <p class="extra-block__label">Junior entreprise · En candidature</p>
+      <h2 class="extra-block__title">TAKER —<br>Chargée de communication</h2>
+      <p class="extra-block__text">
+        Je postule actuellement au poste de <strong>chargée de communication</strong>
+        au sein de <strong>TAKER</strong>, la junior entreprise d'Epitech Lyon.
+        Une opportunité de mettre en pratique mes compétences en design et communication,
+        et de contribuer à un projet collectif qui a du sens.
+      </p>
+      <span class="extra-block__badge">Candidature en cours</span>
+    </div>
+    <div class="extra-block__images extra-block__images--single">
+      <div class="extra-block__img-wrap">
+        <img src="assets/img/taker.png" alt="TAKER Epitech">
+      </div>
+    </div>
   </section>
 
   <footer class="footer">
-    <p>2026 Britney WANKPO-SONON</p>
+    <p>© 2026 Britney Wankpo-Sonon</p>
   </footer>
-
   <script src="js/main.js"></script>
 </body>
 </html>

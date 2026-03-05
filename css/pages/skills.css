@@ -1,6 +1,6 @@
 /* page header */
 .page-header {
-  padding: 10rem 4rem 5rem;
+  padding: 10rem 6rem 5rem;
   background: var(--beige);
   position: relative;
   overflow: hidden;
@@ -8,95 +8,121 @@
 
 .page-header__deco {
   position: absolute;
-  top: -60px;
-  right: -60px;
-  width: 300px;
-  height: 300px;
+  top: -80px; right: -80px;
+  width: 380px; height: 380px;
   border-radius: 50%;
-  background: radial-gradient(circle, var(--caramel), transparent 70%);
-  opacity: 0.08;
+  background: radial-gradient(circle, var(--caramel), transparent 65%);
+  opacity: 0.09;
   pointer-events: none;
-}
-
-.page-header__number {
-  font-family: var(--serif);
-  font-size: 0.75rem;
-  letter-spacing: 0.2em;
-  color: var(--pink-pure);
-  margin-bottom: 0.6rem;
 }
 
 .page-header__title {
   font-family: var(--serif);
-  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-size: clamp(3rem, 6vw, 5rem);
   font-weight: 900;
   color: var(--brown-deep);
-  line-height: 1.1;
-  margin-bottom: 0.8rem;
+  line-height: 1;
+  margin-bottom: 1rem;
 }
 
 .page-header__sub {
   font-size: 1rem;
   color: var(--brown);
+  max-width: 480px;
+  line-height: 1.65;
 }
 
-/* skills */
+/* skills section */
 .skills-section {
-  padding: 5rem 4rem;
+  padding: 6rem;
   background: var(--white);
   display: flex;
   flex-direction: column;
-  gap: 4rem;
-  max-width: 900px;
-  margin: 0 auto;
+  gap: 0;
 }
 
-.skills-group h2 {
+.skills-group {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 3rem;
+  align-items: start;
+  padding: 2.8rem 0;
+  border-bottom: 1px solid var(--beige-mid);
+}
+
+.skills-group:first-child { padding-top: 0; }
+.skills-group:last-child { border-bottom: none; }
+
+/* groupe UX/UI mis en avant — titre plus grand */
+.skills-group--featured .skills-group__title {
+  font-size: 1.6rem;
+  color: var(--pink-pure);
+}
+
+.skills-group__title {
   font-family: var(--serif);
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--brown-deep);
-  margin-bottom: 1.2rem;
-  padding-bottom: 0.6rem;
-  border-bottom: 1px solid var(--beige-mid);
 }
+
+.skills-group--ux .skills-group__title    { color: var(--pink-pure); }
+.skills-group--dev .skills-group__title   { color: var(--brown); }
+.skills-group--tools .skills-group__title { color: var(--caramel); }
+.skills-group--soft .skills-group__title  { color: var(--brown-deep); }
 
 .skills-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
+  padding-top: 0.3rem;
 }
 
+/* tags */
 .tag {
   display: inline-block;
-  padding: 0.4rem 1rem;
+  padding: 0.4rem 1.1rem;
   border-radius: 50px;
   font-size: 0.82rem;
   font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
 
-.tag--pink {
-  background: var(--pink-light);
-  color: var(--pink-pure);
+.tag:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 14px rgba(45, 27, 20, 0.15);
+  filter: brightness(1.05);
 }
 
-.tag--brown {
-  background: #F5EDE6;
-  color: var(--brown);
+.tag--pink    { background: var(--pink-light); color: var(--pink-pure); }
+.tag--brown   { background: #F5EDE6; color: var(--brown); }
+.tag--caramel { background: #FDF0E6; color: var(--caramel); }
+.tag--soft    { background: var(--beige); color: var(--brown-deep); border: 1px solid var(--beige-mid); }
+
+.tag--pink:hover {
+  box-shadow: 0 4px 16px rgba(255, 107, 157, 0.35);
 }
 
-.tag--caramel {
-  background: #FDF0E6;
-  color: var(--caramel);
+.tag--caramel:hover {
+  box-shadow: 0 4px 16px rgba(var(--caramel-rgb, 180, 110, 60), 0.3);
 }
 
-.tag--soft {
-  background: var(--beige);
-  color: var(--brown-deep);
-  border: 1px solid var(--beige-mid);
+.tag--brown:hover {
+  box-shadow: 0 4px 16px rgba(45, 27, 20, 0.2);
 }
 
-@media (max-width: 768px) {
+.tag--soft:hover {
+  box-shadow: 0 4px 16px rgba(45, 27, 20, 0.12);
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .skills-section { padding: 4rem 3rem; }
+  .skills-group { grid-template-columns: 1fr; gap: 1rem; }
+  .page-header { padding: 8rem 3rem 4rem; }
+}
+
+@media (max-width: 640px) {
   .skills-section { padding: 3rem 2rem; }
   .page-header { padding: 8rem 2rem 3rem; }
 }

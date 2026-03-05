@@ -22,83 +22,138 @@
   <header class="navbar">
     <a href="index.html" class="navbar__logo">Accueil</a>
     <ul class="navbar__menu">
-      <li><a href="about.html">A propos</a></li>
+      <li><a href="about.html">À propos</a></li>
       <li><a href="skills.html">Compétences</a></li>
       <li><a href="projects.html" class="navbar__menu-active">Projets</a></li>
-      <li><a href="extra.html">Extrascolaire</a></li>
+      <li><a href="extra.html">Extra-scolaire</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+    <div class="navbar__actions">
+      <button id="dark-toggle" class="dark-toggle" aria-label="Mode sombre">🌙</button>
+      <button class="navbar__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
   <section class="page-header">
     <div class="page-header__deco"></div>
-    <p class="page-header__number">03</p>
     <h1 class="page-header__title">Mes projets</h1>
     <p class="page-header__sub">Ce que j'ai conçu, développé et appris</p>
   </section>
 
   <section class="projects-section">
 
-    <article class="project-card reveal">
-      <div class="project-card__body">
-        <p class="project-card__number">01</p>
-        <h2 class="project-card__title">SkillSwap</h2>
-        <p class="project-card__desc">
-          Conception d'une application web d'évenements de compétences :
-          wireframes, mockups, prototypes interactifs et tests utilisateurs.
-        </p>
-        <div class="project-card__tags">
-          <span class="tag tag--pink">Figma</span>
-          <span class="tag tag--pink">UX/UI</span>
-          <span class="tag tag--pink">Prototypage</span>
-        </div>
-        <a href="https://github.com/Britney05-06" target="_blank" class="btn btn--primary">Voir sur GitHub</a>
-      </div>
-      <div class="project-card__visual">
-        <p>Capture à venir</p>
-      </div>
-    </article>
+    <div class="projects-carousel">
 
-    <article class="project-card project-card--reverse reveal">
-      <div class="project-card__body">
-        <h2 class="project-card__title">E-Todo</h2>
-        <p class="project-card__desc">
-          Application web de gestion de tâches avec authentification utilisateur
-          et base de données relationnelle.
-        </p>
-        <div class="project-card__tags">
-          <span class="tag tag--brown">JavaScript</span>
-          <span class="tag tag--brown">PHP</span>
-          <span class="tag tag--brown">SQL</span>
-        </div>
-      </div>
-      <div class="project-card__visual">
-        <p>Capture à venir</p>
-      </div>
-    </article>
+      <!-- flèche gauche -->
+      <button class="projects-arrow projects-arrow--prev" id="proj-prev" aria-label="Précédent">←</button>
 
-    <article class="project-card reveal">
-      <div class="project-card__body">
-        <p class="project-card__number">03</p>
-        <h2 class="project-card__title">Hack and Juice</h2>
-        <p class="project-card__desc">
-          Projet de cybersécurité : identification de vulnérabilités
-          et sensibilisation aux bonnes pratiques de sécurité web.
-        </p>
-        <div class="project-card__tags">
-          <span class="tag tag--caramel">Cybersécurité</span>
-          <span class="tag tag--caramel">Python</span>
+      <!-- track -->
+      <div class="projects-track-wrap">
+        <div class="projects-track" id="projects-track">
+
+          <article class="project-card">
+            <div class="project-card__body">
+              <h2 class="project-card__title">SkillSwap</h2>
+              <p class="project-card__desc">
+                Conception d'une application web d'échange de compétences :
+                wireframes, mockups, prototypes interactifs et tests utilisateurs.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag tag--pink">Figma</span>
+                <span class="tag tag--pink">UX/UI</span>
+                <span class="tag tag--pink">Prototypage</span>
+              </div>
+              <a href="https://github.com/Britney05-06" target="_blank" class="btn btn--primary">Voir sur GitHub</a>
+            </div>
+            <div class="project-card__visual">
+              <video autoplay muted loop playsinline class="media-skillswap-video">
+                <source src="assets/img/skillswap_demo.mov" type="video/mp4">
+              </video>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__body">
+              <h2 class="project-card__title">E-Todo</h2>
+              <p class="project-card__desc">
+                Application web de gestion de tâches avec authentification utilisateur
+                et base de données relationnelle.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag tag--brown">JavaScript</span>
+                <span class="tag tag--brown">PHP</span>
+                <span class="tag tag--brown">SQL</span>
+              </div>
+              <a href="https://github.com/Britney05-06" target="_blank" class="btn btn--primary">Voir sur GitHub</a>
+            </div>
+            <div class="project-card__visual project-card__visual--desktop">
+              <video autoplay muted loop playsinline class="media-etodo-video">
+                <source src="assets/img/etodo_demo.webm" type="video/webm">
+              </video>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__body">
+              <h2 class="project-card__title">TARDIS</h2>
+              <p class="project-card__desc">
+                Projet Data/IA : data engineering et visualisation, machine learning
+                et développement d'un dashboard interactif.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag tag--caramel">Data Engineering</span>
+                <span class="tag tag--caramel">Machine Learning</span>
+                <span class="tag tag--caramel">Dashboard</span>
+                <span class="tag tag--caramel">Python</span>
+              </div>
+              <a href="https://github.com/Britney05-06" target="_blank" class="btn btn--primary">Voir sur GitHub</a>
+            </div>
+            <div class="project-card__visual">
+              <img src="assets/img/tdashboard.png" alt="TARDIS Dashboard" class="media-tardis-bottom">
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__body">
+              <h2 class="project-card__title">Hack and Juice</h2>
+              <p class="project-card__desc">
+                CTF (Capture The Flag) de cybersécurité sur le OWASP Juice Shop :
+                identification et exploitation de vulnérabilités web pour sensibiliser
+                aux bonnes pratiques de sécurité.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag tag--caramel">Cybersécurité</span>
+                <span class="tag tag--caramel">CTF</span>
+                <span class="tag tag--caramel">OWASP</span>
+                <span class="tag tag--caramel">Python</span>
+              </div>
+              <a href="https://github.com/Britney05-06" target="_blank" class="btn btn--primary">Voir sur GitHub</a>
+            </div>
+            <div class="project-card__visual">
+              <div class="img-stack">
+                <img class="img-stack__item" src="assets/img/hackandjuice2.png" alt="Juice Shop">
+                <img class="img-stack__item" src="assets/img/hackandjuice.png"  alt="Hack and Juice">
+              </div>
+            </div>
+          </article>
+
         </div>
       </div>
-      <div class="project-card__visual">
-        <p>Capture à venir</p>
-      </div>
-    </article>
+
+      <!-- flèche droite -->
+      <button class="projects-arrow projects-arrow--next" id="proj-next" aria-label="Suivant">→</button>
+
+    </div>
+
+    <!-- dots -->
+    <div class="projects-dots" id="proj-dots"></div>
 
   </section>
 
   <footer class="footer">
-    <p>2026 Britney WANKPO-SONON</p>
+    <p>© 2026 Britney Wankpo-Sonon</p>
   </footer>
 
   <script src="js/main.js"></script>

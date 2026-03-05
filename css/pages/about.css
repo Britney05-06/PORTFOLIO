@@ -18,14 +18,6 @@
   pointer-events: none;
 }
 
-.page-header__number {
-  font-family: var(--serif);
-  font-size: 0.75rem;
-  letter-spacing: 0.2em;
-  color: var(--pink-pure);
-  margin-bottom: 0.6rem;
-}
-
 .page-header__title {
   font-family: var(--serif);
   font-size: clamp(2.5rem, 6vw, 5rem);
@@ -114,6 +106,10 @@
 
 .about-intro__text .btn {
   margin-top: 0.8rem;
+}
+
+.about-intro__content .btn {
+  margin-top: 3.1rem;
 }
 
 /* infos */

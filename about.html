@@ -3,88 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A propos de Britney WANKPO-SONON, parcours et personnalite.">
-  <title>A propos | Britney WANKPO-SONON</title>
-
+  <meta name="description" content="À propos de Britney WANKPO-SONON, parcours et personnalité.">
+  <title>À propos | Britney WANKPO-SONON</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/pages/about.css">
 </head>
-
 <body>
-
   <div class="cursor" id="cursor"></div>
   <div class="cursor-follower" id="cursorFollower"></div>
 
   <header class="navbar">
     <a href="index.html" class="navbar__logo">Accueil</a>
     <ul class="navbar__menu">
-      <li><a href="about.html" class="navbar__menu-active">A propos</a></li>
+      <li><a href="about.html" class="navbar__menu-active">À propos</a></li>
       <li><a href="skills.html">Compétences</a></li>
       <li><a href="projects.html">Projets</a></li>
-      <li><a href="extra.html">Extrascolaire</a></li>
+      <li><a href="extra.html">Extra-scolaire</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+    <div class="navbar__actions">
+      <button id="dark-toggle" class="dark-toggle" aria-label="Mode sombre">🌙</button>
+      <button class="navbar__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
+  <!-- header de page -->
   <section class="page-header">
     <div class="page-header__deco"></div>
-    <p class="page-header__number">01</p>
-    <h1 class="page-header__title">A propos</h1>
+    <h1 class="page-header__title">Qui suis-je ?</h1>
     <p class="page-header__sub">Mon parcours, ma personnalité et mes ambitions</p>
   </section>
 
+  <!-- intro : photo + texte -->
   <section class="about-intro">
+
     <div class="about-intro__photo reveal">
       <img src="assets/img/My_pic.jpg" alt="Britney WANKPO-SONON">
       <div class="about-intro__social">
-        <a href="https://www.linkedin.com/in/s%C3%A8tonkpo-beline-britney-wankpo-sonon-538bb4353" target="_blank">LinkedIn</a>
-        <a href="https://github.com/Britney05-06" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/s%C3%A8tonkpo-beline-britney-wankpo-sonon-538bb4353" target="_blank">LinkedIn ↗</a>
+        <a href="https://github.com/Britney05-06" target="_blank">GitHub ↗</a>
       </div>
     </div>
 
-    <div class="about-intro__text reveal">
+    <div class="about-intro__content reveal">
       <p class="about-intro__label">Qui suis-je ?</p>
-      <h2 class="about-intro__title">Curieuse, créative et déterminée</h2>
-      <p>
+      <h2 class="about-intro__title">Curieuse, créative<br>et déterminée</h2>
+      <p class="about-intro__text">
         Curieuse et motivée, je suis passionnée par l'apprentissage et la création de solutions
         qui combinent technologie, design et expérience utilisateur.
         Actuellement, je développe mes compétences en tant que développeuse fullstack
-        et designer pour comprendre concretement le cycle de vie d'un produit.
+        et designer pour comprendre concrètement le cycle de vie d'un produit.
       </p>
-      <p>
-        A long terme, mon objectif est d'evoluer vers un role de Product Manager afin de
-        concevoir et piloter des projets significatifs, alliant strategie, innovation
+      <p class="about-intro__text">
+        À long terme, mon objectif est d'évoluer vers un rôle de Product Manager afin de
+        concevoir et piloter des projets significatifs, alliant stratégie, innovation
         et valeur pour les utilisateurs.
       </p>
       <a href="assets/cv.pdf" download class="btn btn--primary">Télécharger mon CV</a>
     </div>
+
   </section>
 
+  <!-- cards infos -->
   <section class="about-infos">
 
     <div class="about-infos__card reveal">
-      <h3>Formation</h3>
-      <ul>
+      <div class="about-infos__card-icon">🎓</div>
+      <h3 class="about-infos__card-title">Formation</h3>
+      <ul class="about-infos__list">
         <li>
           <strong>Bachelor Informatique</strong>
-          <span>EPITECH Lyon, 2025 en cours</span>
+          <span>EPITECH Lyon · 2025 – en cours</span>
         </li>
         <li>
-          <strong>Licence Informatique L1 et L2</strong>
-          <span>Aix-Marseille Universite, 2023-2025</span>
+          <strong>Licence Informatique L1 & L2</strong>
+          <span>Aix-Marseille Université · 2023–2025</span>
         </li>
       </ul>
     </div>
 
     <div class="about-infos__card reveal">
-      <h3>Langues</h3>
-      <ul>
+      <div class="about-infos__card-icon">🌍</div>
+      <h3 class="about-infos__card-title">Langues</h3>
+      <ul class="about-infos__list">
         <li>
-          <strong>Francais</strong>
+          <strong>Français</strong>
           <span>Langue maternelle</span>
         </li>
         <li>
@@ -95,20 +103,21 @@
     </div>
 
     <div class="about-infos__card reveal">
-      <h3>Hobbies</h3>
-      <ul>
+      <div class="about-infos__card-icon">✨</div>
+      <h3 class="about-infos__card-title">Centres d'intérêt</h3>
+      <ul class="about-infos__list about-infos__list--hobbies">
         <li>Lecture</li>
-        <li>Crochet et couture</li>
-        <li>Sport et activités artistiques</li>
+        <li>Crochet & couture</li>
+        <li>Sport & activités artistiques</li>
         <li>Cuisine</li>
-        <li>Jeux de societé (JDR)</li>
+        <li>Jeux de société (JDR)</li>
       </ul>
     </div>
 
   </section>
 
   <footer class="footer">
-    <p>2026 Britney WANKPO-SONON</p>
+    <p>© 2026 Britney Wankpo-Sonon</p>
   </footer>
 
   <script src="js/main.js"></script>

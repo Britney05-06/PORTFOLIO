@@ -25,23 +25,29 @@
   <header class="navbar">
     <a href="index.html" class="navbar__logo">Accueil</a>
     <ul class="navbar__menu">
-      <li><a href="about.html">A propos</a></li>
+      <li><a href="about.html">À propos</a></li>
       <li><a href="skills.html">Compétences</a></li>
       <li><a href="projects.html">Projets</a></li>
-      <li><a href="extra.html">Extrascolaire</a></li>
+      <li><a href="extra.html">Extra-scolaire</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+    <div class="navbar__actions">
+      <button id="dark-toggle" class="dark-toggle" aria-label="Mode sombre">🌙</button>
+      <button class="navbar__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
   <section class="hero">
-
     <div class="hero__content">
+      <p class="hero__eyebrow">Portfolio · 2026</p>
       <h1 class="hero__title">
         <span class="hero__title-solid">Britney</span>
         <span class="hero__title-outline">Wankpo-Sonon</span>
       </h1>
       <p class="hero__subtitle">
-        Passionnée par le web et le design, future développeuse fullstack et Product Manager.
+        Design, code et expérience utilisateur — je construis des produits qui ont du sens.
       </p>
       <p class="hero__typing">
         <span id="typing-text"></span><span class="cursor-blink"></span>
@@ -55,6 +61,8 @@
     <div class="hero__photo">
       <img src="assets/img/My_pic.jpg" alt="Britney WANKPO-SONON">
     </div>
+
+    <div class="hero__deco-circle"></div>
   </section>
 
   <section class="section-cards">
@@ -65,57 +73,66 @@
 
     <div class="cards-grid">
 
-      <a href="about.html" class="card card--about reveal">
-        <div class="card__bg"></div>
-        <div class="card__arrow">+</div>
-        <div class="card__content">
-          <h3 class="card__title">A propos</h3>
-          <p class="card__sub">Mon parcours et ma personnalité</p>
+      <a href="about.html" class="card card--about">
+        <div class="card__header">
+          <span class="card__label">À propos</span>
+          <span class="card__arrow">↗</span>
         </div>
+        <div class="card__space">
+          Derrière chaque projet, il y a une personne. Venez découvrir qui je suis.
+        </div>
+        <h3 class="card__big-title">À propos<br>de moi</h3>
       </a>
 
-      <a href="skills.html" class="card card--skills reveal">
-        <div class="card__bg"></div>
-        <div class="card__arrow">+</div>
-        <div class="card__content">
-          <p class="card__number">02</p>
-          <h3 class="card__title">Compétences</h3>
-          <p class="card__sub">Tech, outils et soft skills</p>
+      <a href="skills.html" class="card card--skills">
+        <div class="card__header">
+          <span class="card__label">Compétences</span>
+          <span class="card__arrow">↗</span>
         </div>
+        <div class="card__space">
+          Ce que j'ai appris, ce que je maîtrise, ce que je continue d'explorer.
+        </div>
+        <h3 class="card__big-title">Mes<br>outils</h3>
       </a>
 
-      <a href="projects.html" class="card card--projects card--large reveal">
-        <div class="card__bg"></div>
-        <div class="card__arrow">+</div>
-        <div class="card__content">
-          <h3 class="card__title">Projets réalisés</h3>
-          <p class="card__sub">SkillSwap · E-Todo · Hack and Juice</p>
+      <a href="projects.html" class="card card--projects">
+        <div class="card__header">
+          <span class="card__label">Projets</span>
+          <span class="card__arrow">↗</span>
         </div>
+        <div class="card__space">
+          Des idées qui ont pris forme. Chaque projet raconte une histoire.
+        </div>
+        <h3 class="card__big-title">Mes<br>projets</h3>
       </a>
 
-      <a href="extra.html" class="card card--extra reveal">
-        <div class="card__bg"></div>
-        <div class="card__arrow">+</div>
-        <div class="card__content">
-          <h3 class="card__title">Extra-scolaire</h3>
-          <p class="card__sub">Asso, Hub, Evènements</p>
+      <a href="extra.html" class="card card--extra">
+        <div class="card__header">
+          <span class="card__label">Extra-scolaire</span>
+          <span class="card__arrow">↗</span>
         </div>
+        <div class="card__space">
+          Associations, évènements et engagements qui me définissent au-delà du code.
+        </div>
+        <h3 class="card__big-title">Extra</h3>
       </a>
 
-      <a href="contact.html" class="card card--contact reveal">
-        <div class="card__bg"></div>
-        <div class="card__arrow">+</div>
-        <div class="card__content">
-          <h3 class="card__title">Contact</h3>
-          <p class="card__sub">Travaillons ensemble</p>
+      <a href="contact.html" class="card card--contact">
+        <div class="card__header">
+          <span class="card__label">Contact</span>
+          <span class="card__arrow">↗</span>
         </div>
+        <div class="card__space">
+          Une idée, un projet, une opportunité ? Je suis là.
+        </div>
+        <h3 class="card__big-title">On se<br>parle ?</h3>
       </a>
 
     </div>
   </section>
 
   <footer class="footer">
-    <p>2026 Britney WANKPO-SONON</p>
+    <p>© 2026 Britney Wankpo-Sonon</p>
   </footer>
 
   <script src="js/main.js"></script>

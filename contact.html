@@ -3,84 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contacter Britney WANKPO-SONON.">
-  <title>Contact | Britney WANKPO-SONON</title>
-
+  <title>Contact — Britney WANKPO-SONON</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/pages/contact.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
-
 <body>
-
   <div class="cursor" id="cursor"></div>
   <div class="cursor-follower" id="cursorFollower"></div>
 
   <header class="navbar">
     <a href="index.html" class="navbar__logo">Accueil</a>
     <ul class="navbar__menu">
-      <li><a href="about.html">A propos</a></li>
+      <li><a href="about.html">À propos</a></li>
       <li><a href="skills.html">Compétences</a></li>
       <li><a href="projects.html">Projets</a></li>
-      <li><a href="extra.html">Extrascolaire</a></li>
+      <li><a href="extra.html">Extra-scolaire</a></li>
       <li><a href="contact.html" class="navbar__menu-active">Contact</a></li>
     </ul>
+    <div id="google_translate_element" style="display:none"></div>
+    <button id="dark-toggle" class="dark-toggle" aria-label="Mode sombre">🌙</button>
+    <button class="navbar__burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </header>
 
   <section class="page-header">
+    <div class="page-header__text">
+      <h1 class="page-header__title">On se parle ?</h1>
+      <p class="page-header__sub">Une idée, un projet, une opportunité de stage ? Je suis disponible.</p>
+    </div>
     <div class="page-header__deco"></div>
-    <p class="page-header__number">06</p>
-    <h1 class="page-header__title">Travaillons ensemble</h1>
-    <p class="page-header__sub">Une idée, un projet ? Ecris-moi</p>
   </section>
 
   <section class="contact-section">
 
-    <div class="contact-info reveal">
-      <h2>Restons en contact</h2>
-      <p>Je suis ouverte aux opportunités de stage, collaborations et projets créatifs.</p>
-      <div class="contact-info__links">
-        <a href="https://www.linkedin.com/in/s%C3%A8tonkpo-beline-britney-wankpo-sonon-538bb4353" target="_blank">LinkedIn</a>
-        <a href="https://github.com/Britney05-06" target="_blank">GitHub</a>
-        <a href="assets/cv.pdf" download>Télécharger mon CV</a>
+    <div class="contact-info">
+      <h2 class="contact-info__title">Me retrouver</h2>
+      <div class="contact-info__items">
+        <div class="contact-info__item">
+          <a href="/cdn-cgi/l/email-protection#b5d7c7dcc1dbd0ccc2d4dbdec5da8583f5d2d8d4dcd99bd6dad8" class="contact-info__item-value">Email</a>
+        </div>
+        <div class="contact-info__item">
+          <a href="https://www.linkedin.com/in/s%C3%A8tonkpo-beline-britney-wankpo-sonon-538bb4353/" target="_blank" class="contact-info__item-value">LinkedIn</a>
+        </div>
+        <div class="contact-info__item">
+          <a href="https://github.com/Britney05-06" target="_blank" class="contact-info__item-value">GitHub</a>
+        </div>
       </div>
     </div>
 
-    <div class="contact-form-wrapper reveal">
-      <form id="contact-form">
-
+    <div class="contact-form-wrap">
+      <form id="contact-form" class="contact-form">
         <div class="contact-form__group">
           <label for="name">Nom</label>
-          <input type="text" id="name" name="name" placeholder="Ton nom" required>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required>
         </div>
-
         <div class="contact-form__group">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="ton@email.com" required>
+          <input type="email" id="email" name="email" placeholder="votre@email.com" required>
         </div>
-
         <div class="contact-form__group">
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" placeholder="Dis-moi tout..." required></textarea>
+          <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
         </div>
-
-        <button type="submit" class="btn btn--primary">Envoyer</button>
-        <p id="form-status"></p>
-
+        <button type="submit" class="btn btn--primary">Envoyer le message</button>
       </form>
     </div>
 
   </section>
 
   <footer class="footer">
-    <p>2026 Britney WANKPO-SONON</p>
+    <p>© 2026 Britney Wankpo-Sonon</p>
   </footer>
-
   <script src="js/main.js"></script>
 </body>
 </html>
